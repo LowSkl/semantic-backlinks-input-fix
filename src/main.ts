@@ -671,7 +671,7 @@ class SemanticSuggest extends EditorSuggest<SearchResult> {
         const before = editor.getLine(cursor.line).slice(0, cursor.ch);
         if (/\[\[[^\]]*$/.test(before)) return null;
 
-        const match = before.match(/[a-záčďéěíňóřšťúůýžA-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ0-9]{2,}$/);
+        const match = before.match(/[\p{L}\p{N}]{2,}$/u);
         if (!match || match[0].length < this.settings.minWordLength) return null;
 
         const word = match[0];
