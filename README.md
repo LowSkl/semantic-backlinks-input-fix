@@ -131,6 +131,10 @@ Requires Node.js 16+. The build uses esbuild to bundle `src/main.ts` into a sing
 
 Found a bug or have a feature request? [Open a new issue](https://github.com/Brightwav3/semantic-backlinks/issues/new).
 
+## Support
+
+If this saved you time, you can [buy me a coffee ☕](https://buymeacoffee.com/brightwave).
+
 ## License
 
 MIT
